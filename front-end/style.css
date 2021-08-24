@@ -14,3 +14,14 @@
 .card img{
     height: 190px;
 }
+
+.product{
+    margin-top: 50px;
+    display: flex;
+}
+.info{
+    padding: 10px;
+}
+#product-des{
+    margin-top: 85px;
+}

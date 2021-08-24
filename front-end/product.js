@@ -32,11 +32,26 @@ window.addEventListener("DOMContentLoaded", (event) => {
         var productName = document.getElementById('product-name');
         var productDes = document.getElementById('product-des');
         var productPrice = document.getElementById('product-price');
+        var form = document.getElementsByTagName('option')
+        var formZero = form[0]
+        var formOne = form[1];
+        var formTwo =form[2];
+        var formThree =form[3];
 
         productPic.src = teddy.imageUrl;
         productName.innerText = teddy.name;
         productDes.innerText = teddy.description;
-        productPrice.innerText = financial(teddy.price/100) + (' €') ;
+        productPrice.innerText = financial(teddy.price/100) + (' €');
+
+        formZero.innerText = 'Choisissez une couleur';
+        formOne.innerText = teddy.colors[0];
+        formTwo.innerText = teddy.colors[1];
+        formThree.innerText = teddy.colors[2];
+
+
+        
+        console.log(form)
+        console.log(formOne)
         console.log(teddy) 
     }
 });
